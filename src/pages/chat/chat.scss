@@ -1,0 +1,50 @@
+page-chat {
+
+}
+
+[icon-only] {
+    color: #488aff;
+}
+
+.message {
+    .box {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #488aff;
+        color:#fff;
+        border-radius: 30px;
+    }
+
+    &.left {
+        text-align: left;
+        .box {
+            border-bottom-right-radius: 0;
+        }
+    }
+    &.right {
+        text-align: right;
+        .box {
+            border-bottom-left-radius: 0;
+        }
+    }
+    
+}
+
+[name="sendMsgTxt"]{
+    width: 100%;
+    border-radius: 4px;
+    height: 2.8em;
+    font-size: 1.6rem;
+    margin: 0.4rem 0.2rem;
+    padding: 0 1em;
+    box-shadow: none;
+    outline: none;
+    border: solid 1px #ccc;
+}
+
+.platform-android {
+    [name="sendMsgTxt"]{
+        height: 3.6rem;
+        border-radius: 0;
+    }
+}

@@ -11,4 +11,7 @@ export class HomePage {
 
   }
 
+  removeChat() {
+    localStorage.chatData='';
+  }
 }
